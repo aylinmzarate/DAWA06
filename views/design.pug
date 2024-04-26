@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Diseño y Creación
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+
+  body
+    // Navbar 
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      a.navbar-brand(href="#" style="font-family: 'Roboto', sans-serif;") ANNETE CROCHET
+      button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      .collapse.navbar-collapse#navbarNav
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href="/") Inicio
+          li.nav-item
+            a.nav-link(href="/nosotros") Nosotros
+          li.nav-item
+            a.nav-link(href="/servicios") Nuestros Servicios
+          li.nav-item
+            a.nav-link(href="/catalogo-clientes") Catálogo de Clientes
+          li.nav-item
+            a.nav-link(href="/contacto") Contáctenos
+
+    // Contenido de la vista 'design'
+    .container.mt-5
+      h2 DISEÑO Y CREACIÓN
+      .row
+        .col-md-8.mb-4
+          .card
+            a(href="/Annete/servicios/design") 
+              img.card-img-top.img-fluid(src="/images/servicio1.jpg", alt="...")
+            .card-body
+              h5.card-title(style="color: black;") Diseño y Creación de Piezas Únicas
+              p.card-text(style="color: black;") Ofrecemos servicios de diseño y creación de piezas únicas de crochet, adaptadas a los gustos y necesidades de cada cliente. Desde prendas de vestir hasta accesorios para el hogar, trabajamos en colaboración con nuestros clientes para transformar sus ideas en realidad.
+
+    // Scripts
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")

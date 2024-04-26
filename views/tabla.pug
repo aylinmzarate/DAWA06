@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Tabla de Multiplicar
+    link(rel="stylesheet" href="/css/styles.css")
+  body
+    h1 Tabla del #{numero}
+    table
+      thead
+        tr
+          th Multiplicación
+      tbody
+        each row in tabla
+          tr
+            td #{numero} x #{row.multiplicando} = #{row.resultado}

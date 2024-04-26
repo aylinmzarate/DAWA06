@@ -1,0 +1,83 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Annete Crochet - Inicio
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    style.
+      /* Estilos adicionales */
+      .carousel-item {
+        position: relative;
+      }
+
+      .carousel-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        z-index: 1;
+      }
+
+      .carousel-overlay h1 {
+        font-size: 3rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 1rem; /* Ajusta el margen inferior para separar el texto del botón */
+      }
+
+      .carousel-overlay p {
+        font-size: 1.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        margin-bottom: 2rem;
+      }
+
+      .carousel-overlay a.btn {
+        text-shadow: none; /* Elimina el efecto de sombra en el texto del botón */
+      }
+
+  body
+    // Navbar
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      a.navbar-brand(href="#" style="font-family: 'Roboto', sans-serif;") ANNETE CROCHET
+      button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      div.collapse.navbar-collapse#navbarNav
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href="/") Inicio
+          li.nav-item
+            a.nav-link(href="/nosotros") Nosotros
+          li.nav-item
+            a.nav-link(href="Annete/servicios") Nuestros Servicios
+          li.nav-item
+            a.nav-link(href="/catalogo-clientes") Catálogo de Clientes
+          li.nav-item
+            a.nav-link(href="/contacto") Contáctenos
+
+    // Carousel
+    div#carouselExampleSlidesOnly.carousel.slide(data-ride="carousel")
+      div.carousel-inner
+        div.carousel-item.active
+          img.d-block.w-100(src="/images/imagen1.jpg", alt="...", style="max-width: 2000px; max-height: 600px;")
+          div.carousel-overlay
+            h1 Descubre el arte del crochet con Annete Crochet
+            p Explora nuestros diseños únicos y personalizados.
+            a.btn.btn-primary(href="/contacto") Contáctenos
+        div.carousel-item
+          img.d-block.w-100(src="/images/imagen2.jpg", alt="...", style="max-width: 2000px; max-height: 600px;")
+          div.carousel-overlay
+            h1 Descubre el arte del crochet con Annete Crochet
+            p Explora nuestros diseños únicos y personalizados.
+            a.btn.btn-primary(href="/contacto") Contáctenos
+        div.carousel-item
+          img.d-block.w-100(src="/images/imagen3.jpg", alt="...", style="max-width: 2000px; max-height: 600px;")
+          div.carousel-overlay
+            h1 Descubre el arte del crochet con Annete Crochet
+            p Explora nuestros diseños únicos y personalizados.
+            a.btn.btn-primary(href="/contacto") Contáctenos
+
+  script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js")
+  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")

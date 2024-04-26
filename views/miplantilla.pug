@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    title Mi plantilla Pug mejorada
+    style.
+      body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f4f4f4;
+          margin: 40px;
+          padding: 0;
+      }
+      header {
+          background-color: #333;
+          color: #fff;
+          padding: 10px 0;
+          text-align: center;
+      }
+      h1 {
+          color: #333;
+          margin-top: 20px;
+      }
+      p {
+          color: #666;
+          line-height: 1.6;
+      }
+      .info {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+  body
+    header
+      h1 Bienvenido a mi plantilla Pug mejorada
+    .info
+      p= mensaje
+      p Tu nombre es #{nombre}
+      p Tu edad es #{edad} años
+      p Tu correo es #{correo}
+    a(href="#") Volver al inicio
